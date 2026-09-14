@@ -16,6 +16,44 @@ import json
 import time
 import os
 import sqlite3
+
+# === ONLINE PLAYER TRACKING & IDLE KICK ===
+import threading
+online_players = {}  # {user_id: {'username': str, 'last_active': float, 'socket': sock}}
+db_lock = threading.Lock()
+IDLE_TIMEOUT_SECONDS = 300  # 5 phút
+
+def update_player_activity(user_id, username=None, socket=None):
+    """Gọi khi player có hoạt động"""
+    online_players[user_id] = {
+        'username': username or str(user_id),
+        'last_active': time.time(),
+        'socket': socket
+    }
+
+def remove_player(user_id):
+    """Gọi khi player disconnect"""
+    online_players.pop(user_id, None)
+
+def cleanup_idle_players():
+    """Thread nền - mỗi30s kick player idle"""
+    while True:
+        time.sleep(30)
+        try:
+            now = time.time()
+            for uid, info in list(online_players.items()):
+                if now - info.get('last_active', 0) > IDLE_TIMEOUT_SECONDS:
+                    print(f"[Server] Kick idle: {info.get('username', uid)} ({int(now-info['last_active'])}s idle)")
+                    sock = info.get('socket')
+                    if sock:
+                        try: sock.close()
+                        except: pass
+                    remove_player(uid)
+        except: pass
+
+# Start cleanup thread
+threading.Thread(target=cleanup_idle_players, daemon=True).start()
+print("[Server] Idle kick enabled: 5min timeout, check every 30s")
 import hashlib
 import threading
 import traceback
@@ -1211,15 +1249,16 @@ class MVLHandler(BaseHTTPRequestHandler):
                 # Auto-register
                 token = gen_token()
                 session_id = gen_token()[:16]
+                username = email.split('@')[0] if '@' in email else email
                 conn.execute("INSERT INTO accounts (username, password_hash, email, access_token, session_id, last_login) VALUES (?,?,?,?,?,?)",
-                             (email, hash_pw(pw or email), email, token, session_id, time.strftime('%Y-%m-%d %H:%M:%S')))
+                             (username, hash_pw(pw or ''), email, token, session_id, time.strftime('%Y-%m-%d %H:%M:%S')))
                 conn.commit()
                 acc = conn.execute("SELECT * FROM accounts WHERE username=?", (email,)).fetchone()
             else:
                 # Verify password
-                if pw and acc['password_hash'] != hash_pw(pw):
+                if acc['password_hash'] != hash_pw(pw or ''):
                     conn.close()
-                    self.send_json({"status": "fail", "message": "Wrong password"})
+                    self.send_json({"status": "fail", "message": "Sai mat khau"})
                     return
                 token = gen_token()
                 session_id = gen_token()[:16]
@@ -1227,10 +1266,12 @@ class MVLHandler(BaseHTTPRequestHandler):
                              (token, session_id, time.strftime('%Y-%m-%d %H:%M:%S'), acc['id']))
                 conn.commit()
             conn.close()
+            # Track online player
+            update_player_activity(acc['id'], acc['username'])
             self.send_json({
                 "status": "success",
                 "type": "login",
-                "user_info": {"user_id": str(acc['id']), "username": email, "display_name": email.split('@')[0]},
+                "user_info": {"user_id": str(acc['id']), "username": acc['username'], "display_name": acc['username']},
                 "access_token": token,
                 "session_id": session_id,
                 "message": "Login successful"
@@ -1411,6 +1452,7 @@ MSG_CONNECT, MSG_CONNECT_ACK, MSG_RMI, MSG_HEARTBEAT = 0x04, 0x05, 0x01, 0x03
 
 def handle_proudnet_client(conn, addr):
     host_id = hash(addr) & 0xFFFF
+    player_id = None
     print(f"[ProudNet] Connected: {addr} (HostID: {host_id})")
     try:
         while True:
@@ -1436,6 +1478,11 @@ def handle_proudnet_client(conn, addr):
                 data = {}
 
             if msg_type == MSG_CONNECT:
+                # Track player online
+                account_id = data.get("account_id") or data.get("user_id")
+                if account_id:
+                    player_id = account_id
+                    update_player_activity(account_id, data.get("username", str(account_id)), conn)
                 resp = json.dumps({"status":"success","host_id":host_id,"server_time":int(time.time()*1000)}).encode()
                 conn.sendall(struct.pack('<I', len(resp)+1) + struct.pack('<B', MSG_CONNECT_ACK) + resp)
 
@@ -1469,6 +1516,9 @@ def handle_proudnet_client(conn, addr):
     finally:
         conn.close()
         print(f"[ProudNet] Disconnected: {addr}")
+        if player_id:
+            remove_player(player_id)
+            print(f"[Server] Player {player_id} removed from online list")
 
 def is_http_first_byte(b):
     return b in b'GPHODPC'
