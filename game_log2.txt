@@ -1,0 +1,278 @@
+09-15 05:44:34.372  1694  1694 E PowerFingerPrintServiceStubImpl: extCmd failed, reset mExtDaemon. 
+09-15 05:44:34.372  1694  1694 E PowerFingerPrintServiceStubImpl: 	at com.android.server.biometrics.sensors.fingerprint.hidl.LockoutFrameworkImpl.resetFailedAttemptsForUser(LockoutFrameworkImpl.java:116)
+09-15 05:44:34.372  1694  1694 E PowerFingerPrintServiceStubImpl: 	at com.android.server.biometrics.sensors.fingerprint.hidl.FingerprintAuthenticationClient.resetFailedAttempts(FingerprintAuthenticationClient.java:199)
+09-15 05:44:34.374  1512  1913 E [GF_HAL][gf_hal_frr_database]: [writeXiaomiDataToRecordFile] /sdcard/MIUI/debug_log/1.dat can't open file. err=GF_ERROR_FILE_OPEN_FAILED, errno=1078
+09-15 05:44:34.374  1512  1913 E [GF_HAL][gf_hal_frr_database]: [writeXiaomiDataToRecordFile] exit. err=GF_ERROR_FILE_OPEN_FAILED, errno=1078
+09-15 05:44:34.397  1512  1913 E [GF_HAL][gf_hal_frr_database]: [gf_hal_write_auth_record]rename /data/vendor/goodix/auth_ratio_database.db file error
+09-15 05:44:34.397  1512  1913 E [GF_HAL][gf_hal_frr_database]: [gf_hal_write_auth_record] exit. err=GF_ERROR_FILE_NOT_EXIST, errno=1079
+09-15 05:44:34.397  1512  1913 E [GF_HAL][gf_hal_frr_database]: [gf_hal_save_auth_ratio_record] exit. err=GF_ERROR_FILE_NOT_EXIST, errno=1079
+09-15 05:44:34.398  1512  1913 I [GF_HAL][gf_hal_frr_database]: [gf_hal_update] 'SUCCESS/FAILED' zone update. Current value=71292
+09-15 05:44:34.562  2785  2863 I QmiHwInterface/SendRequestCallback: <- RCV:OnResponseEvent{status=3, error message = messageId not supported}
+09-15 05:44:34.566  2785  2855 I DynamicDDSService: sendRequest has failure response. errorMsg = messageId not supported
+09-15 05:44:34.696  6707  7418 D NetdExecutor: Failed REV <- {500 Command not recognized}
+09-15 05:44:34.734  1694  4295 W SensorService: sensor 00000033 already enabled in connection 0xb400007bbfdb0700 (ignoring)
+09-15 05:44:34.742  2902  3112 D NetworkController.MobileSignalController(4): update5GConnectState: false
+09-15 05:44:34.774   929  2339 I Dpps    : DppsServer::HandleDppsClientEvent():1147 Client connection 27 has closed
+09-15 05:44:34.826  8035 16137 I PersonalSafety: ConnectivityProtectionLockingIntentOperation: cancelled task [CONTEXT service_id=310 ]
+09-15 05:44:34.851 16136 16136 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+09-15 05:44:34.930 16136 16136 D nativeloader:   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libmainlinecronet.139.0.7205.3.so:libservice-connectivity.so:libservice-thread-jni.so:stable_cronet_libcrypto.so:stable_cronet_libssl.so
+09-15 05:44:34.942  9185  9264 V bt_stack: [VERBOSE1:gatt_utils.cc(293)] gatt_find_the_connected_bda start_idx=0
+09-15 05:44:35.000 16136 16136 I Perf    : Connecting to perf service.
+09-15 05:44:35.020 11160 11198 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=126 ]
+09-15 05:44:35.031  1694  2387 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 4]
+09-15 05:44:35.032  8693  2002 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.
+09-15 05:44:35.193  1694  2391 D NsdService: registerService: 258 name: {"nm":"Redmi 9T","as":"[8194]","ip":"49"}, type: _mi-connect._udp, host: null, port: 56666, txtRecord: idHash=NThi
+09-15 05:44:35.193  1694  2391 D NsdService: mdnssd [register, 258, {"nm":"Redmi 9T","as":"[8194]","ip":"49"}, _mi-connect._udp, 56666, DGlkSGFzaD1OVGhpCgVkZXY9MQVzZWM9MgthcHBzPVs4MTk0XQ1uYW1lPVJlZG1pIDlUC2ZsYWdzPUFnPT0KDXZlcnNpb249NjU1NDQMY29tbW9uRGF0YT0wEmFwcHNEYXRhPUFRSUVndz09Cg==]
+09-15 05:44:35.193  1694  2521 W SensorService: sensor 00000033 already enabled in connection 0xb400007cf532d380 (ignoring)
+09-15 05:44:35.519  8693  2002 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=true, isWifiConnected=true)
+09-15 05:44:35.842  2902  3112 D NetworkController.MobileSignalController(4): update5GConnectState: false
+09-15 05:44:36.177  2908  2908 D Launcher.CellLayout: touch item:ShortcutInfo, id=462, itemType=0, user=UserHandle{0}, mIconType=0, pkgName=vn.shg.mobi.mongvolam, className=vn.shg.mobi.mongvolam.UnityActivity, screenId=2, container=-100, cellX=0, cellY=0, spanX=1, spanY=1
+09-15 05:44:36.268  1694  2521 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=vn.shg.mobi.mongvolam/.UnityActivity bnds=[78,182][247,351] (has extras)} from uid 10092 from pid 2908 callingPackage com.miui.home
+09-15 05:44:36.314  1694  2056 D Boost   : hostingType=pre-top-activity, hostingName={vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity}, callerPackage=others, isSystem=true, isBoostNeeded=false.
+09-15 05:44:36.315  1694  2056 I ActivityManager: Start proc 16182:vn.shg.mobi.mongvolam/u0a704 for pre-top-activity {vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} caller=others
+09-15 05:44:36.323  4593 11758 W SQLiteLog: (28) double-quoted string literal: "vn.shg.mobi.mongvolam"
+09-15 05:44:36.351 16182 16182 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+09-15 05:44:36.352  1694  2030 I SmartPower.vn.shg.mobi.mongvolam/10704(0): died->visible(63352ms) R(become visible) adj=-10000.
+09-15 05:44:36.355  1694  2436 I SmartPower: vn.shg.mobi.mongvolam/10704 state=died adj=905 proc size=1 move to foreground become visible
+09-15 05:44:36.395  2908 25088 D AppObserver: ForegroundInfo{mForegroundPackageName='vn.shg.mobi.mongvolam', mForegroundUid=10704, mForegroundPid=16182, mLastForegroundPackageName='com.miui.home', mLastForegroundUid=10092, mLastForegroundPid=2908, mMultiWindowForegroundPackageName='vn.shg.mobi.mongvolam', mMultiWindowForegroundUid=10704, mFlags=1}
+09-15 05:44:36.395  6707  7242 D PerfEngineController: ForegroundInfo{mForegroundPackageName='vn.shg.mobi.mongvolam', mForegroundUid=10704, mForegroundPid=16182, mLastForegroundPackageName='com.miui.home', mLastForegroundUid=10092, mLastForegroundPid=2908, mMultiWindowForegroundPackageName='vn.shg.mobi.mongvolam', mMultiWindowForegroundUid=10704, mFlags=1}
+09-15 05:44:36.395 18300 18310 D AutoInstallService: onForegroundInfoChanged: vn.shg.mobi.mongvolam
+09-15 05:44:36.395  6967  7106 I ProcessMonitor: onForegroundInfoChanged: ForegroundInfo{mForegroundPackageName='vn.shg.mobi.mongvolam', mForegroundUid=10704, mForegroundPid=16182, mLastForegroundPackageName='com.miui.home', mLastForegroundUid=10092, mLastForegroundPid=2908, mMultiWindowForegroundPackageName='vn.shg.mobi.mongvolam', mMultiWindowForegroundUid=10704, mFlags=1}
+09-15 05:44:36.395 11771  3828 I GST     : forePkg: vn.shg.mobi.mongvolam, preForePkg: com.miui.home
+09-15 05:44:36.396  6707  6878 D LS-ForegroundStatusManager: handleMessage ForegroundInfoChanged. pkg = vn.shg.mobi.mongvolam, uid = 10704, mCurrentForegroundUid = 10092
+09-15 05:44:36.411  4426 11471 W MQSService: CallerName:vn.shg.mobi.mongvolam,calling Uid:10704
+09-15 05:44:36.411  4426 11471 D MQSService: registerApplicationScoutThread pid = 16182, packageName = vn.shg.mobi.mongvolam
+09-15 05:44:36.412  2908  3228 W RecentsModel: getRunningTask   taskInfo=TaskInfo{userId=0 taskId=373 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=vn.shg.mobi.mongvolam/.UnityActivity } baseActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} topActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} origActivity=null realActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} numActivities=1 lastActiveTime=400730253 supportsSplitScreenMultiWindow=true supportsMultiWindow=true resizeMode=6 isResizeable=true token=WCT{android.window.IWindowContainerToken$Stub$Proxy@baf233c} topActivityType=1 pictureInPictureParams=PictureInPictureParams( aspectRatio=null sourceRectHint=null hasSetActions=false isAutoPipEnabled=false isSeamlessResizeEnabled=true) displayCutoutSafeInsets=Rect(0, 78 - 0, 0) topActivityInfo=ActivityInfo{2b678c5 vn.shg.mobi.mongvolam.UnityActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true topActivityInSizeCompat=false locusId= null windowMode=0}
+09-15 05:44:36.412  2908  3228 W RecentsModel: getTaskInfoIgnoreHomeAndFreeform   taskInfo=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity}
+09-15 05:44:36.412  3744  3744 D TouchAssistant: getPackageNameFromPid packageName:vn.shg.mobi.mongvolam
+09-15 05:44:36.412  3744  3744 D TouchAssistant: onTopAppChanged packageName:vn.shg.mobi.mongvolam
+09-15 05:44:36.414  2908  3228 E ActivityManagerWrapper: getRecentTasks: taskId=373   userId=0   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} }
+09-15 05:44:36.430 16182 16182 D nativeloader: Configuring clns-4 for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=18, uses_libraries=ALL, library_path=/data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/lib/arm:/system/fake-libs:/data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/base.apk!/lib/armeabi-v7a, permitted_path=/data:/mnt/expand:/data/user/0/vn.shg.mobi.mongvolam
+09-15 05:44:36.435 16182 16182 D nativeloader: Configuring clns-5 for other apk /data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/base.apk. target_sdk_version=18, uses_libraries=, library_path=/data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/lib/arm:/system/fake-libs:/data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/base.apk!/lib/armeabi-v7a, permitted_path=/data:/mnt/expand:/data/user/0/vn.shg.mobi.mongvolam
+09-15 05:44:36.444 16182 16182 I Perf    : Connecting to perf service.
+09-15 05:44:36.447 16182 16182 V GraphicsEnvironment: ANGLE Developer option for 'vn.shg.mobi.mongvolam' set to: 'default'
+09-15 05:44:36.450 16182 16182 I ForceDarkHelperStubImpl: initialize for vn.shg.mobi.mongvolam , ForceDarkOrigin
+09-15 05:44:36.461 16182 16182 D nativeloader: Load /data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/lib/arm/libMesgLog.so using class loader ns clns-5 (caller=/data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/base.apk): ok
+09-15 05:44:36.488 16182 16182 E MiuiMultiWindowUtils: initFreeFormResolutionArgs failed, device is lime
+09-15 05:44:36.499 16182 16182 D nativeloader: Load /data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/lib/arm/libmain.so using class loader ns clns-5 (caller=<unknown>): ok
+09-15 05:44:36.508 16182 16182 D nativeloader: Load /data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/lib/arm/libmain.so using class loader ns clns-5 (caller=/data/app/~~B06lSsHW1ThYx-ff9qgMeQ==/vn.shg.mobi.mongvolam-X86gxEPLSs0BcHfXqp--QQ==/base.apk): ok
+09-15 05:44:36.557  1694  2521 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:36.576  1694  2521 W WindowManager: Failed looking up window session=Session{44420b2 16182:u0a10704} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6095 com.android.server.wm.Session.insetsModified:641 android.view.IWindowSession$Stub.onTransact:1163 
+09-15 05:44:36.581  2908  2908 D RecentsImpl: mActivityStateObserver vn.shg.mobi.mongvolam.UnityActivity
+09-15 05:44:36.581  2908  2908 W RecentsImpl: onResumed className=vn.shg.mobi.mongvolam.UnityActivity   mIsInAnotherPro=false   isKeyguardLocked=false
+09-15 05:44:36.598  1694  2521 D WindowManager: Input focus has changed to Window{b4f95fe u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} display=0 updateInputWindows = true
+09-15 05:44:36.600  1694  2030 D WindowManager: Update InputWindowHandle: b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity, frame=[0,78,1080,2087], touchableRegion=SkRegion((0,-78,1080,2009)), visible=true, focusable=true, changed=true
+09-15 05:44:36.631  2908  2934 W System  : A resource failed to call release. 
+09-15 05:44:36.631  2908  2934 W System  : A resource failed to call release. 
+09-15 05:44:36.632  2908  2934 W System  : A resource failed to call release. 
+09-15 05:44:36.632  2908  2934 W System  : A resource failed to call release. 
+09-15 05:44:36.632  2908  2934 W System  : A resource failed to call release. 
+09-15 05:44:36.632  2908  2934 W System  : A resource failed to call release. 
+09-15 05:44:36.632  2908  2934 W System  : A resource failed to call release. 
+09-15 05:44:36.632  2908  2934 W System  : A resource failed to call release. 
+09-15 05:44:36.637 16182 16201 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+09-15 05:44:36.647 16182 16201 E .mobi.mongvola: open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+09-15 05:44:36.651  1694  2521 D WindowManager: finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING Window{b4f95fe u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} in Surface(name=vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity)/@0xa0b140a
+09-15 05:44:36.651 16182 16182 D SurfaceView: UPDATE Surface(name=SurfaceView[vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity])/@0x3d41628, mIsProjectionMode = false
+09-15 05:44:36.666  1694  4371 W InputManager-JNI: Input channel object 'bf8534c Splash Screen vn.shg.mobi.mongvolam (client)' was disposed without first being removed with the input manager!
+09-15 05:44:36.677  1694  2030 D WindowManager: Update InputWindowHandle: b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity, frame=[0,78,1080,2087], touchableRegion=SkRegion((0,0,1080,2009)), visible=true, focusable=true, changed=true
+09-15 05:44:36.684  3744  3744 D TouchAssistant: topActivity.getPackageName(),packageName:vn.shg.mobi.mongvolam
+09-15 05:44:36.684  3744  3744 D TouchAssistant: onTopAppChanged packageName:vn.shg.mobi.mongvolam
+09-15 05:44:36.689  1694  2023 I ActivityTaskManager: Displayed vn.shg.mobi.mongvolam/.UnityActivity: +389ms
+09-15 05:44:36.772  1694  4371 D ActivityTaskManager:  setRequestedOrientationFreeForm: requestedOrientation= 1 task=Task{fc80520 #373 type=standard A=10704:vn.shg.mobi.mongvolam U=0 visible=true mode=fullscreen translucent=false sz=1} MiuiFreeformServicesUtils.getFreeformIgnoreRequestOrientationList()= [com.miui.player, com.sqw.setdl.mi, air.tv.douyu.android, com.youku.phone, com.tencent.gamehelper.smoba, com.taobao.litetao, com.live.shuoqiudi, com.baidu.homework, com.tencent.qqmusic, cn.xiaochuankeji.zuiyouLite, com.facebook.orca, com.android.browser, com.alibaba.android.rimet]packageName= vn.shg.mobi.mongvolam
+09-15 05:44:36.776 16182 16207 D Unity   : GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_half_float GL_OES_framebuffer_object GL_OES_rgb8_rgba8 GL_OES_compressed_ETC1_RGB8_texture GL_AMD_compressed_ATC_texture GL_KHR_texture_compression_astc_ldr GL_OES_texture_npot GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_read_format_bgra GL_OES_texture_3D GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_QCOM_alpha_test GL_OES_depth24 GL_OES_packed_depth_stencil GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_EXT_sRGB GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_EXT_texture_type_2_10_10_10_REV GL_EXT_texture_sRGB_decode GL_EXT_texture_format_sRGB_override GL_OES_element_index_uint GL_EXT_copy_image GL_EXT_geometry_shader GL_EXT_tessellation_shader GL_OES_texture_stencil8 GL_EXT_shader_io_blocks GL_OES_shader_image_atomic GL_OES_sample_variables GL_EXT_texture_border_clamp GL_EXT_EGL_image_external_wrap_modes GL_EXT_multisampled_
+09-15 05:44:36.776 16182 16207 D Unity   : render_to_texture GL_EXT_multisampled_render_to_texture2 GL_OES_shader_multisample_interpolation GL_EXT_texture_cube_map_array GL_EXT_draw_buffers_indexed GL_EXT_gpu_shader5 GL_EXT_robustness GL_EXT_texture_buffer GL_EXT_shader_framebuffer_fetch GL_ARM_shader_framebuffer_fetch_depth_stencil GL_OES_texture_storage_multisample_2d_array GL_OES_sample_shading GL_OES_get_program_binary GL_EXT_debug_label GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_QCOM_tiled_rendering GL_ANDROID_extension_pack_es31a GL_EXT_primitive_bounding_box GL_OES_standard_derivatives GL_OES_vertex_array_object GL_EXT_disjoint_timer_query GL_KHR_debug GL_EXT_YUV_target GL_EXT_sRGB_write_control GL_EXT_texture_norm16 GL_EXT_discard_framebuffer GL_OES_surfaceless_context GL_OVR_multiview GL_OVR_multiview2 GL_EXT_texture_sRGB_R8 GL_KHR_no_error GL_EXT_debug_marker GL_OES_EGL_image_external_essl3 GL_OVR_multiview_multisampled_render_to_texture GL_EXT_buffer_storage GL_EXT_external_buffer GL_EXT_blit_framebuffer_para
+09-15 05:44:36.776 16182 16207 D Unity   : ms GL_EXT_clip_cull_distance GL_EXT_protected_textures GL_EXT_shader_non_constant_global_initializers GL_QCOM_texture_foveated GL_QCOM_texture_foveated_subsampled_layout GL_QCOM_shader_framebuffer_fetch_noncoherent GL_QCOM_shader_framebuffer_fetch_rate GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_EGL_image_array GL_NV_shader_noperspective_interpolation GL_KHR_robust_buffer_access_behavior GL_EXT_EGL_image_storage GL_EXT_blend_func_extended GL_EXT_clip_control GL_OES_texture_view GL_EXT_fragment_invocation_density GL_QCOM_YUV_texture_gather 
+09-15 05:44:36.793 16182 16207 W libc    : pthread_create sched_setscheduler(1, {94}) call failed: Operation not permitted
+09-15 05:44:36.804   994 14907 D AudioFlinger: Failed to add event callback
+09-15 05:44:36.812   994 14907 I AudioFlinger: create audiotrack for vn.shg.mobi.mongvolam  uid 10704
+09-15 05:44:36.822   889 15470 D audio_hw_primary: out_set_parameters: enter: usecase(4: compress-offload-playback2) kvpairs: appname=+vn.shg.mobi.mongvolam
+09-15 05:44:36.822   994  1454 D APM_AudioPolicyManager: startOutput() output 4085, stream 3, session 53745 appname vn.shg.mobi.mongvolam
+09-15 05:44:36.859   994 17305 E AudioFlinger: open /proc/16182/cmdline error
+09-15 05:44:36.963   889 16238 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000271B 
+09-15 05:44:36.963   889 16238 D ACDB-LOADER: Error: ACDB_CMD_GET_AUDPROC_INSTANCE_GAIN_DEP_STEP_TABLE_SIZE Returned = -19
+09-15 05:44:36.963   889 16238 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000271B 
+09-15 05:44:36.963   889 16238 D ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+09-15 05:44:37.287 16182 16200 E SohagameSDK: apiUrl=http://45.137.70.90:2031/public/getMysohaScheme?device_type=android
+09-15 05:44:37.718  1694  4371 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:37.718  1694  4371 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:37.719  1694  4371 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:37.722  1694  4371 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:37.751  1694  4371 D ActivityTaskManager:  setRequestedOrientationFreeForm: requestedOrientation= 1 task=Task{fc80520 #373 type=standard A=10704:vn.shg.mobi.mongvolam U=0 visible=true mode=fullscreen translucent=false sz=1} MiuiFreeformServicesUtils.getFreeformIgnoreRequestOrientationList()= [com.miui.player, com.sqw.setdl.mi, air.tv.douyu.android, com.youku.phone, com.tencent.gamehelper.smoba, com.taobao.litetao, com.live.shuoqiudi, com.baidu.homework, com.tencent.qqmusic, cn.xiaochuankeji.zuiyouLite, com.facebook.orca, com.android.browser, com.alibaba.android.rimet]packageName= vn.shg.mobi.mongvolam
+09-15 05:44:38.448  1694  4371 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:38.448  1694  4371 W SensorService: sensor 0000000b already enabled in connection 0xb400007bbfdaf800 (ignoring)
+09-15 05:44:38.449  1694  4371 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:38.521 16182 16207 I Unity   : MYLOG expPath = /storage/emulated/0/Android/obb/vn.shg.mobi.mongvolam
+09-15 05:44:38.521 16182 16207 I Unity   :  
+09-15 05:44:38.521 16182 16207 I Unity   : (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+09-15 05:44:38.521 16182 16207 I Unity   : 
+09-15 05:44:38.521 16182 16207 I Unity   : MYLOG Main = /storage/emulated/0/Android/obb/vn.shg.mobi.mongvolam/main.100.vn.shg.mobi.mongvolam.obb
+09-15 05:44:38.521 16182 16207 I Unity   :  
+09-15 05:44:38.521 16182 16207 I Unity   : (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+09-15 05:44:38.521 16182 16207 I Unity   : 
+09-15 05:44:39.171 16182 16243 W libc    : pthread_create sched_setscheduler(1, {90}) call failed: Operation not permitted
+09-15 05:44:41.048 11160 11198 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=126 ]
+09-15 05:44:41.055  8693  2002 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.
+09-15 05:44:41.055  1694  2387 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+09-15 05:44:41.158  1694  2352 D MIUIInput: [MotionEvent] publisher action=0x0, 187305876, channel 'b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity (server)'
+09-15 05:44:41.231  1694  2352 D MIUIInput: [MotionEvent] publisher action=0x1, 187305950, channel 'b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity (server)'
+09-15 05:44:41.286  1694  2521 I ActivityTaskManager: START u0 {cmp=vn.shg.mobi.mongvolam/.MainActivity (has extras)} from uid 10704 from pid 16182 callingPackage vn.shg.mobi.mongvolam
+09-15 05:44:41.297 16182 16207 I Unity   : Call login!
+09-15 05:44:41.297 16182 16207 I Unity   :  
+09-15 05:44:41.297 16182 16207 I Unity   : (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+09-15 05:44:41.297 16182 16207 I Unity   : 
+09-15 05:44:41.297  1694  2030 D WindowManager: Update InputWindowHandle: b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity, frame=[0,78,1080,2087], touchableRegion=SkRegion((0,0,1080,2009)), visible=true, focusable=true, changed=true
+09-15 05:44:41.398   994 14907 E AudioFlinger: open /proc/16182/cmdline error
+09-15 05:44:41.401 16182 16182 W Activity: PerfMonitor: Slow Operation: Activity vn.shg.mobi.mongvolam/.UnityActivity onPause took 102ms
+09-15 05:44:41.402  1694  2521 I ActivityTaskManager: The Process vn.shg.mobi.mongvolam Already Exists in BG. So sending its PID: 16182
+09-15 05:44:41.409  1694  2052 D PeriodicCleaner: vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity isn't fullscreen, skip.
+09-15 05:44:41.415  1694  2428 D ProcessManager: skip notify foregroundAppInfo:ApplicationInfo{309e012 vn.shg.mobi.mongvolam}
+09-15 05:44:41.423 16182 16182 W .mobi.mongvola: Method com.nostra13.universalimageloader.core.ImageLoader com.nostra13.universalimageloader.core.ImageLoader.getInstance() failed lock verification and will run slower.
+09-15 05:44:41.433 16182 16182 W .mobi.mongvola: Method boolean com.facebook.FacebookSdk.isInitialized() failed lock verification and will run slower.
+09-15 05:44:41.434 16182 16182 W .mobi.mongvola: Method void com.facebook.FacebookSdk.sdkInitialize(android.content.Context) failed lock verification and will run slower.
+09-15 05:44:41.435 16182 16182 W .mobi.mongvola: Method void com.facebook.FacebookSdk.sdkInitialize(android.content.Context, int) failed lock verification and will run slower.
+09-15 05:44:41.435 16182 16182 W .mobi.mongvola: Method void com.facebook.FacebookSdk.sdkInitialize(android.content.Context, int, com.facebook.FacebookSdk$InitializeCallback) failed lock verification and will run slower.
+09-15 05:44:41.435 16182 16182 W .mobi.mongvola: Method void com.facebook.FacebookSdk.sdkInitialize(android.content.Context, com.facebook.FacebookSdk$InitializeCallback) failed lock verification and will run slower.
+09-15 05:44:41.441 16182 16253 W .mobi.mongvola: Method void com.facebook.internal.Logger.registerAccessToken(java.lang.String) failed lock verification and will run slower.
+09-15 05:44:41.441 16182 16253 W .mobi.mongvola: Method void com.facebook.internal.Logger.registerStringToReplace(java.lang.String, java.lang.String) failed lock verification and will run slower.
+09-15 05:44:41.441 16182 16253 W .mobi.mongvola: Method java.lang.String com.facebook.internal.Logger.replaceStrings(java.lang.String) failed lock verification and will run slower.
+09-15 05:44:41.442 16182 16256 W .mobi.mongvola: Method com.facebook.AccessTokenManager com.facebook.AccessTokenManager.getInstance() failed lock verification and will run slower.
+09-15 05:44:41.444 16182 16182 W .mobi.mongvola: Method com.facebook.internal.CallbackManagerImpl$Callback com.facebook.internal.CallbackManagerImpl.getStaticCallback(java.lang.Integer) failed lock verification and will run slower.
+09-15 05:44:41.444 16182 16182 W .mobi.mongvola: Method void com.facebook.internal.CallbackManagerImpl.registerStaticCallback(int, com.facebook.internal.CallbackManagerImpl$Callback) failed lock verification and will run slower.
+09-15 05:44:41.446 16182 16256 W .mobi.mongvola: Method com.facebook.ProfileManager com.facebook.ProfileManager.getInstance() failed lock verification and will run slower.
+09-15 05:44:41.446 16182 16182 W .mobi.mongvola: Method void com.google.android.gcm.GCMRegistrar.onDestroy(android.content.Context) failed lock verification and will run slower.
+09-15 05:44:41.446 16182 16182 W .mobi.mongvola: Method void com.google.android.gcm.GCMRegistrar.setRetryBroadcastReceiver(android.content.Context) failed lock verification and will run slower.
+09-15 05:44:41.469 16182 16182 D GCMRegistrar: resetting backoff for vn.shg.mobi.mongvolam
+09-15 05:44:41.469 16182 16182 V GCMRegistrar: Registering app vn.shg.mobi.mongvolam of senders 754061351551
+09-15 05:44:41.478  1694  1724 W System  : A resource failed to call release. 
+09-15 05:44:41.482  2878  3424 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:vn.shg.mobi.mongvolam:getDeviceId:4
+09-15 05:44:41.495 16182 16182 D nativeloader:   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libmainlinecronet.139.0.7205.3.so:libservice-connectivity.so:libservice-thread-jni.so:stable_cronet_libcrypto.so:stable_cronet_libssl.so
+09-15 05:44:41.514  2908  3228 W RecentsModel: getRunningTask   taskInfo=TaskInfo{userId=0 taskId=373 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=vn.shg.mobi.mongvolam/.UnityActivity } baseActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} topActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity} origActivity=null realActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} numActivities=2 lastActiveTime=400735356 supportsSplitScreenMultiWindow=true supportsMultiWindow=true resizeMode=6 isResizeable=true token=WCT{android.window.IWindowContainerToken$Stub$Proxy@bf0c5ca} topActivityType=1 pictureInPictureParams=PictureInPictureParams( aspectRatio=null sourceRectHint=null hasSetActions=false isAutoPipEnabled=false isSeamlessResizeEnabled=true) displayCutoutSafeInsets=Rect(0, 78 - 0, 0) topActivityInfo=ActivityInfo{603f33b vn.shg.mobi.mongvolam.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true topActivityInSizeCompat=false locusId= null windowMode=0}
+09-15 05:44:41.514  2908  3228 W RecentsModel: getTaskInfoIgnoreHomeAndFreeform   taskInfo=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity}
+09-15 05:44:41.516  2908  3228 E ActivityManagerWrapper: getRecentTasks: taskId=373   userId=0   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} }
+09-15 05:44:41.534 16182 16273 I chromium: [0915/054441.534544:INFO:android_webview/browser/variations/variations_seed_loader.cc:67] Failed to open file for reading.: No such file or directory (2)
+09-15 05:44:41.550  8693  2002 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=true, isWifiConnected=true)
+09-15 05:44:41.575  1694  2056 D Boost   : hostingType=, hostingName={vn.shg.mobi.mongvolam/org.chromium.content.app.SandboxedProcessService0:0}, callerPackage=vn.shg.mobi.mongvolam, isSystem=false, isBoostNeeded=false.
+09-15 05:44:41.576  1694  2056 I ActivityManager: Start proc 16276:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i314 for  {vn.shg.mobi.mongvolam/org.chromium.content.app.SandboxedProcessService0:0} caller=vn.shg.mobi.mongvolam
+09-15 05:44:41.588 16276 16276 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+09-15 05:44:41.594  1694  2436 E AppOps  : java.lang.SecurityException: Specified package vn.shg.mobi.mongvolam under uid 99314 but it is not
+09-15 05:44:41.602 16276 16276 E MQSEventManagerDelegate: failed to get MQSService.
+09-15 05:44:41.623 16276 16276 E ForceDarkHelperStubImpl: getForceDarkOriginState transact failed , mService: null
+09-15 05:44:41.623 16276 16276 I ForceDarkHelperStubImpl: initialize for vn.shg.mobi.mongvolam , ForceDarkOrigin
+09-15 05:44:41.635  1694  2436 I SmartPower: vn.shg.mobi.mongvolam/99314 state=background adj=100 proc size=1 move to inactive service end vn.shg.mobi.mongvolam/org.chromium.content.app.SandboxedProcessService0:0
+09-15 05:44:41.660  1694  4390 D ConnectivityService: requestNetwork for uid/pid:10704/16182 activeRequest: null callbackRequest: 27511 [NetworkRequest [ REQUEST id=27512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10704 RequestorUid: 10704 RequestorPkg: vn.shg.mobi.mongvolam UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|LP
+09-15 05:44:41.664  1694  2387 D ConnectivityService: NetReassign [27512 : null → 156] [c 0] [a 0] [i 2]
+09-15 05:44:41.664  1694  2375 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=27512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10704 RequestorUid: 10704 RequestorPkg: vn.shg.mobi.mongvolam UnderlyingNetworks: Null] ]
+09-15 05:44:41.664  1694  2375 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=27512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10704 RequestorUid: 10704 RequestorPkg: vn.shg.mobi.mongvolam UnderlyingNetworks: Null] ]
+09-15 05:44:41.664  1694  2375 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=27512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10704 RequestorUid: 10704 RequestorPkg: vn.shg.mobi.mongvolam UnderlyingNetworks: Null] ]
+09-15 05:44:41.668  1694  2387 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+09-15 05:44:41.702   889 15736 D audio_hw_primary: out_set_parameters: enter: usecase(4: compress-offload-playback2) kvpairs: appname=-vn.shg.mobi.mongvolam
+09-15 05:44:41.705  2878  3424 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:vn.shg.mobi.mongvolam:getDeviceId:4
+09-15 05:44:41.713 16182 16295 W cr_media: BLUETOOTH_CONNECT permission is missing.
+09-15 05:44:41.737  2878  3424 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:vn.shg.mobi.mongvolam:getDeviceId:4
+09-15 05:44:41.749  2908  2908 D RecentsImpl: mActivityStateObserver vn.shg.mobi.mongvolam.MainActivity
+09-15 05:44:41.750  2908  2908 W RecentsImpl: onResumed className=vn.shg.mobi.mongvolam.MainActivity   mIsInAnotherPro=false   isKeyguardLocked=false
+09-15 05:44:41.755 16182 16324 I CameraManagerGlobal: Connecting to camera service
+09-15 05:44:41.757 16182 16182 W Looper  : PerfMonitor looperActivity : package=vn.shg.mobi.mongvolam/.MainActivity time=0ms latency=348ms running=0ms  procState=-1  historyMsgCount=7 (msgIndex=5 wall=116ms seq=36 h=android.app.ActivityThread$H w=159) (msgIndex=7 wall=333ms seq=38 h=android.app.ActivityThread$H w=159)
+09-15 05:44:41.772  1352 15258 W ServiceManager: Permission failure: android.permission.CAMERA_OPEN_CLOSE_LISTENER from uid=10704 pid=16182
+09-15 05:44:41.791  1694  4371 D WindowManager: Input focus has changed to Window{361261e u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity} display=0 updateInputWindows = true
+09-15 05:44:41.793  1694  2030 D WindowManager: Update InputWindowHandle: 361261e vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity, frame=[0,0,1080,2087], touchableRegion=SkRegion((0,0,1080,2340)), visible=true, focusable=true, changed=true
+09-15 05:44:41.809  2878  3424 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:vn.shg.mobi.mongvolam:getDeviceId:4
+09-15 05:44:41.916  1694  4371 D WindowManager: finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING Window{361261e u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity} in Surface(name=vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity)/@0x72e3e32
+09-15 05:44:41.919 16182 16182 E URL     : http://45.137.70.90:2031/dialog/SdkWebView/login_ver2/?redirect_uri=urilogin&app_id=7f77e4348c5251668d2ac54eebe6f15c&areaid=&roleid=&rolename=&is_encode_character=1&rolelevel=&gver=10.0.0&sdkver=3.0.8.3&clientname=&at=eda17b14680ce720b7656833656c4446a96d81ed886047fc2ce6de979c303650&device_id_vcc=d3b4461cb16e01b5&bundle_id=vn.shg.mobi.mongvolam
+09-15 05:44:41.926  1694  2023 I ActivityTaskManager: Displayed vn.shg.mobi.mongvolam/.MainActivity: +635ms
+09-15 05:44:41.936  1694  2030 D WindowManager: Update InputWindowHandle: 361261e vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity, frame=[0,0,1080,2087], touchableRegion=SkRegion((0,0,1080,2340)), visible=true, focusable=true, changed=true
+09-15 05:44:42.066 16182 16267 E SohagameSDK: http://45.137.70.90:2031/api/a/GET/app/oinfo?app_key=7f77e4348c5251668d2ac54eebe6f15c&viet_token=&app_id=7f77e4348c5251668d2ac54eebe6f15c&areaid=&roleid=&rolename=&is_encode_character=1&rolelevel=&gver=10.0.0&sdkver=3.0.8.3&clientname=&access_token=eda17b14680ce720b7656833656c4446a96d81ed886047fc2ce6de979c303650&device_id_vcc=d3b4461cb16e01b5&bundle_id=vn.shg.mobi.mongvolam
+09-15 05:44:42.177 16182 16253 W .mobi.mongvola: Method com.facebook.internal.FacebookRequestErrorClassification com.facebook.FacebookRequestError.getErrorClassification() failed lock verification and will run slower.
+09-15 05:44:42.177 16182 16253 W .mobi.mongvola: Method com.facebook.internal.FacebookRequestErrorClassification com.facebook.internal.FacebookRequestErrorClassification.getDefaultErrorClassification() failed lock verification and will run slower.
+09-15 05:44:42.325 16182 16315 E SohagameSDK: apiUrl=http://45.137.70.90:2031/api/a/GET/me/userinfo?&app_id=7f77e4348c5251668d2ac54eebe6f15c&areaid=&roleid=&rolename=&is_encode_character=1&rolelevel=&gver=10.0.0&sdkver=3.0.8.3&clientname=&access_token=eda17b14680ce720b7656833656c4446a96d81ed886047fc2ce6de979c303650&device_id_vcc=d3b4461cb16e01b5&bundle_id=vn.shg.mobi.mongvolam
+09-15 05:44:42.326 16182 16182 I Tuanlm  : Login fail!Cannot parse the JSON data
+09-15 05:44:42.343  1694  2030 D WindowManager: Focus not requested for window=Window{361261e u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity} because it has no surface or is not focusable.
+09-15 05:44:42.352  1694  4371 D WindowManager: Input focus has changed to Window{b4f95fe u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} display=0 updateInputWindows = true
+09-15 05:44:42.374  1694  2030 D WindowManager: Update InputWindowHandle: b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity, frame=[0,78,1080,2087], touchableRegion=SkRegion((0,0,1080,2009)), visible=true, focusable=true, changed=true
+09-15 05:44:42.377  1694  2428 D ProcessManager: skip notify foregroundAppInfo:ApplicationInfo{5f808ad vn.shg.mobi.mongvolam}
+09-15 05:44:42.381  2908  2908 D RecentsImpl: mActivityStateObserver vn.shg.mobi.mongvolam.UnityActivity
+09-15 05:44:42.381  2908  2908 W RecentsImpl: onResumed className=vn.shg.mobi.mongvolam.UnityActivity   mIsInAnotherPro=false   isKeyguardLocked=false
+09-15 05:44:42.417  1694  2521 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:42.424  1694  4390 W InputManager-JNI: Input channel object '361261e vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity (client)' was disposed without first being removed with the input manager!
+09-15 05:44:42.427  1694  2521 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:42.429   994 17305 D AudioFlinger: Failed to add event callback
+09-15 05:44:42.433 16182 16182 E ActivityThread: Activity vn.shg.mobi.mongvolam.MainActivity has leaked IntentReceiver vn.soha.game.sdk.dialogs.DialogLogin$1@ea44eb9 that was originally registered here. Are you missing a call to unregisterReceiver()?
+09-15 05:44:42.433 16182 16182 E ActivityThread: android.app.IntentReceiverLeaked: Activity vn.shg.mobi.mongvolam.MainActivity has leaked IntentReceiver vn.soha.game.sdk.dialogs.DialogLogin$1@ea44eb9 that was originally registered here. Are you missing a call to unregisterReceiver()?
+09-15 05:44:42.433 16182 16182 E ActivityThread: 	at vn.shg.mobi.mongvolam.MainActivity.OnLoginSoha(Unknown Source:27)
+09-15 05:44:42.433 16182 16182 E ActivityThread: 	at vn.shg.mobi.mongvolam.MainActivity.onCreate(Unknown Source:109)
+09-15 05:44:42.447   994 17305 I AudioFlinger: create audiotrack for vn.shg.mobi.mongvolam  uid 10704
+09-15 05:44:42.457   889 15736 D audio_hw_primary: out_set_parameters: enter: usecase(4: compress-offload-playback2) kvpairs: appname=+vn.shg.mobi.mongvolam
+09-15 05:44:42.457   994  1454 D APM_AudioPolicyManager: startOutput() output 4093, stream 3, session 53753 appname vn.shg.mobi.mongvolam
+09-15 05:44:42.461  2908  3228 W RecentsModel: getRunningTask   taskInfo=TaskInfo{userId=0 taskId=373 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=vn.shg.mobi.mongvolam/.UnityActivity } baseActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} topActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} origActivity=null realActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} numActivities=1 lastActiveTime=400736303 supportsSplitScreenMultiWindow=true supportsMultiWindow=true resizeMode=6 isResizeable=true token=WCT{android.window.IWindowContainerToken$Stub$Proxy@23d7496} topActivityType=1 pictureInPictureParams=PictureInPictureParams( aspectRatio=null sourceRectHint=null hasSetActions=false isAutoPipEnabled=false isSeamlessResizeEnabled=true) displayCutoutSafeInsets=Rect(0, 78 - 0, 0) topActivityInfo=ActivityInfo{fb48817 vn.shg.mobi.mongvolam.UnityActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true topActivityInSizeCompat=false locusId= null windowMode=0}
+09-15 05:44:42.461  2908  3228 W RecentsModel: getTaskInfoIgnoreHomeAndFreeform   taskInfo=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity}
+09-15 05:44:42.462  2908  3228 E ActivityManagerWrapper: getRecentTasks: taskId=373   userId=0   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} }
+09-15 05:44:42.495   994 17305 E AudioFlinger: open /proc/16182/cmdline error
+09-15 05:44:42.602   889 16354 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000271B 
+09-15 05:44:42.602   889 16354 D ACDB-LOADER: Error: ACDB_CMD_GET_AUDPROC_INSTANCE_GAIN_DEP_STEP_TABLE_SIZE Returned = -19
+09-15 05:44:42.602   889 16354 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000271B 
+09-15 05:44:42.602   889 16354 D ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+09-15 05:44:43.834  1694  2352 D MIUIInput: [MotionEvent] publisher action=0x0, 187308552, channel 'b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity (server)'
+09-15 05:44:43.915  1694  2352 D MIUIInput: [MotionEvent] publisher action=0x1, 187308633, channel 'b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity (server)'
+09-15 05:44:43.994  1694  4371 I ActivityTaskManager: START u0 {cmp=vn.shg.mobi.mongvolam/.MainActivity (has extras)} from uid 10704 from pid 16182 callingPackage vn.shg.mobi.mongvolam
+09-15 05:44:44.006  1694  2030 D WindowManager: Update InputWindowHandle: b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity, frame=[0,78,1080,2087], touchableRegion=SkRegion((0,0,1080,2009)), visible=true, focusable=true, changed=true
+09-15 05:44:44.006 16182 16207 I Unity   : Call login!
+09-15 05:44:44.006 16182 16207 I Unity   :  
+09-15 05:44:44.006 16182 16207 I Unity   : (Filename: ./artifacts/AndroidManagedGenerated/UnityEngineDebug.cpp Line: 56)
+09-15 05:44:44.006 16182 16207 I Unity   : 
+09-15 05:44:44.080 11160 11198 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=126 ]
+09-15 05:44:44.082  1694  2387 D ConnectivityService: NetReassign [no changes] [c 0] [a 2] [i 2]
+09-15 05:44:44.088  8693  8676 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.
+09-15 05:44:44.154   994 15738 E AudioFlinger: open /proc/16182/cmdline error
+09-15 05:44:44.157 16182 16182 W Activity: PerfMonitor: Slow Operation: Activity vn.shg.mobi.mongvolam/.UnityActivity onPause took 150ms
+09-15 05:44:44.159  1694  4387 I ActivityTaskManager: The Process vn.shg.mobi.mongvolam Already Exists in BG. So sending its PID: 16182
+09-15 05:44:44.163  1694  2052 D PeriodicCleaner: vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity isn't fullscreen, skip.
+09-15 05:44:44.167  1694  2428 D ProcessManager: skip notify foregroundAppInfo:ApplicationInfo{59b6819 vn.shg.mobi.mongvolam}
+09-15 05:44:44.178 16182 16182 D GCMRegistrar: resetting backoff for vn.shg.mobi.mongvolam
+09-15 05:44:44.178 16182 16182 V GCMRegistrar: Registering app vn.shg.mobi.mongvolam of senders 754061351551
+09-15 05:44:44.184  2878  3384 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:vn.shg.mobi.mongvolam:getDeviceId:4
+09-15 05:44:44.194  2878  3384 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:vn.shg.mobi.mongvolam:getDeviceId:4
+09-15 05:44:44.207  2878  3384 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:vn.shg.mobi.mongvolam:getDeviceId:4
+09-15 05:44:44.218  2908  2908 D RecentsImpl: mActivityStateObserver vn.shg.mobi.mongvolam.MainActivity
+09-15 05:44:44.219  2908  2908 W RecentsImpl: onResumed className=vn.shg.mobi.mongvolam.MainActivity   mIsInAnotherPro=false   isKeyguardLocked=false
+09-15 05:44:44.235  1694  1736 D WindowManager: Input focus has changed to Window{3b26cea u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity} display=0 updateInputWindows = true
+09-15 05:44:44.235  1694  2030 D WindowManager: Update InputWindowHandle: 3b26cea vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity, frame=[0,0,1080,2087], touchableRegion=SkRegion((0,0,1080,2340)), visible=true, focusable=true, changed=true
+09-15 05:44:44.257  1694  1736 D WindowManager: finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING Window{3b26cea u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity} in Surface(name=vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity)/@0x2c26db6
+09-15 05:44:44.262 16182 16182 E URL     : http://45.137.70.90:2031/dialog/SdkWebView/login_ver2/?redirect_uri=urilogin&app_id=7f77e4348c5251668d2ac54eebe6f15c&areaid=&roleid=&rolename=&is_encode_character=1&rolelevel=&gver=10.0.0&sdkver=3.0.8.3&clientname=&at=eda17b14680ce720b7656833656c4446a96d81ed886047fc2ce6de979c303650&device_id_vcc=d3b4461cb16e01b5&bundle_id=vn.shg.mobi.mongvolam
+09-15 05:44:44.263  1694  2023 I ActivityTaskManager: Displayed vn.shg.mobi.mongvolam/.MainActivity: +267ms
+09-15 05:44:44.269  2908  3228 W RecentsModel: getRunningTask   taskInfo=TaskInfo{userId=0 taskId=373 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=vn.shg.mobi.mongvolam/.UnityActivity } baseActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} topActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity} origActivity=null realActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} numActivities=2 lastActiveTime=400738111 supportsSplitScreenMultiWindow=true supportsMultiWindow=true resizeMode=6 isResizeable=true token=WCT{android.window.IWindowContainerToken$Stub$Proxy@8d44422} topActivityType=1 pictureInPictureParams=PictureInPictureParams( aspectRatio=null sourceRectHint=null hasSetActions=false isAutoPipEnabled=false isSeamlessResizeEnabled=true) displayCutoutSafeInsets=Rect(0, 78 - 0, 0) topActivityInfo=ActivityInfo{36f8eb3 vn.shg.mobi.mongvolam.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true topActivityInSizeCompat=false locusId= null windowMode=0}
+09-15 05:44:44.269  1694  2030 D WindowManager: Update InputWindowHandle: 3b26cea vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity, frame=[0,0,1080,2087], touchableRegion=SkRegion((0,0,1080,2340)), visible=true, focusable=true, changed=true
+09-15 05:44:44.269  2908  3228 W RecentsModel: getTaskInfoIgnoreHomeAndFreeform   taskInfo=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity}
+09-15 05:44:44.271  2908  3228 E ActivityManagerWrapper: getRecentTasks: taskId=373   userId=0   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} }
+09-15 05:44:44.456   889  1067 D audio_hw_primary: out_set_parameters: enter: usecase(4: compress-offload-playback2) kvpairs: appname=-vn.shg.mobi.mongvolam
+09-15 05:44:44.528  2878  3384 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:vn.shg.mobi.mongvolam:getDeviceId:4
+09-15 05:44:44.578  8693  8676 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=true, isWifiConnected=true)
+09-15 05:44:44.922 16182 16361 E SohagameSDK: http://45.137.70.90:2031/api/a/GET/app/oinfo?app_key=7f77e4348c5251668d2ac54eebe6f15c&viet_token=&app_id=7f77e4348c5251668d2ac54eebe6f15c&areaid=&roleid=&rolename=&is_encode_character=1&rolelevel=&gver=10.0.0&sdkver=3.0.8.3&clientname=&access_token=eda17b14680ce720b7656833656c4446a96d81ed886047fc2ce6de979c303650&device_id_vcc=d3b4461cb16e01b5&bundle_id=vn.shg.mobi.mongvolam
+09-15 05:44:44.922 16182 16363 E SohagameSDK: apiUrl=http://45.137.70.90:2031/api/a/GET/me/userinfo?&app_id=7f77e4348c5251668d2ac54eebe6f15c&areaid=&roleid=&rolename=&is_encode_character=1&rolelevel=&gver=10.0.0&sdkver=3.0.8.3&clientname=&access_token=eda17b14680ce720b7656833656c4446a96d81ed886047fc2ce6de979c303650&device_id_vcc=d3b4461cb16e01b5&bundle_id=vn.shg.mobi.mongvolam
+09-15 05:44:44.923 16182 16182 I Tuanlm  : Login fail!Cannot parse the JSON data
+09-15 05:44:44.939  1694  2030 D WindowManager: Focus not requested for window=Window{3b26cea u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity} because it has no surface or is not focusable.
+09-15 05:44:44.953  1694  4371 D WindowManager: Input focus has changed to Window{b4f95fe u0 vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} display=0 updateInputWindows = true
+09-15 05:44:44.974  1694  2030 D WindowManager: Update InputWindowHandle: b4f95fe vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity, frame=[0,78,1080,2087], touchableRegion=SkRegion((0,0,1080,2009)), visible=true, focusable=true, changed=true
+09-15 05:44:44.975  1694  2428 D ProcessManager: skip notify foregroundAppInfo:ApplicationInfo{5f808ad vn.shg.mobi.mongvolam}
+09-15 05:44:44.979  2908  2908 D RecentsImpl: mActivityStateObserver vn.shg.mobi.mongvolam.UnityActivity
+09-15 05:44:44.980  2908  2908 W RecentsImpl: onResumed className=vn.shg.mobi.mongvolam.UnityActivity   mIsInAnotherPro=false   isKeyguardLocked=false
+09-15 05:44:45.000  1694  4371 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:45.012   994 15738 D AudioFlinger: Failed to add event callback
+09-15 05:44:45.015  1694  4371 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10704 pid=16182
+09-15 05:44:45.025  1694  4371 W InputManager-JNI: Input channel object '3b26cea vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.MainActivity (client)' was disposed without first being removed with the input manager!
+09-15 05:44:45.031   994 15738 I AudioFlinger: create audiotrack for vn.shg.mobi.mongvolam  uid 10704
+09-15 05:44:45.033 16182 16182 E ActivityThread: Activity vn.shg.mobi.mongvolam.MainActivity has leaked IntentReceiver vn.soha.game.sdk.dialogs.DialogLogin$1@552eb32 that was originally registered here. Are you missing a call to unregisterReceiver()?
+09-15 05:44:45.033 16182 16182 E ActivityThread: android.app.IntentReceiverLeaked: Activity vn.shg.mobi.mongvolam.MainActivity has leaked IntentReceiver vn.soha.game.sdk.dialogs.DialogLogin$1@552eb32 that was originally registered here. Are you missing a call to unregisterReceiver()?
+09-15 05:44:45.033 16182 16182 E ActivityThread: 	at vn.shg.mobi.mongvolam.MainActivity.OnLoginSoha(Unknown Source:27)
+09-15 05:44:45.033 16182 16182 E ActivityThread: 	at vn.shg.mobi.mongvolam.MainActivity.onCreate(Unknown Source:109)
+09-15 05:44:45.042   889 15496 D audio_hw_primary: out_set_parameters: enter: usecase(4: compress-offload-playback2) kvpairs: appname=+vn.shg.mobi.mongvolam
+09-15 05:44:45.043   994  1454 D APM_AudioPolicyManager: startOutput() output 4101, stream 3, session 53761 appname vn.shg.mobi.mongvolam
+09-15 05:44:45.062  2908  3228 W RecentsModel: getRunningTask   taskInfo=TaskInfo{userId=0 taskId=373 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=vn.shg.mobi.mongvolam/.UnityActivity } baseActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} topActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} origActivity=null realActivity=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} numActivities=1 lastActiveTime=400738905 supportsSplitScreenMultiWindow=true supportsMultiWindow=true resizeMode=6 isResizeable=true token=WCT{android.window.IWindowContainerToken$Stub$Proxy@ef4ef9c} topActivityType=1 pictureInPictureParams=PictureInPictureParams( aspectRatio=null sourceRectHint=null hasSetActions=false isAutoPipEnabled=false isSeamlessResizeEnabled=true) displayCutoutSafeInsets=Rect(0, 78 - 0, 0) topActivityInfo=ActivityInfo{df3bda5 vn.shg.mobi.mongvolam.UnityActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true topActivityInSizeCompat=false locusId= null windowMode=0}
+09-15 05:44:45.062  2908  3228 W RecentsModel: getTaskInfoIgnoreHomeAndFreeform   taskInfo=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity}
+09-15 05:44:45.063  2908  3228 E ActivityManagerWrapper: getRecentTasks: taskId=373   userId=0   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{vn.shg.mobi.mongvolam/vn.shg.mobi.mongvolam.UnityActivity} }
+09-15 05:44:45.079   994 14907 E AudioFlinger: open /proc/16182/cmdline error
+09-15 05:44:45.112   889 16385 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000271B 
+09-15 05:44:45.112   889 16385 D ACDB-LOADER: Error: ACDB_CMD_GET_AUDPROC_INSTANCE_GAIN_DEP_STEP_TABLE_SIZE Returned = -19
+09-15 05:44:45.112   889 16385 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000271B 
+09-15 05:44:45.112   889 16385 D ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+09-15 05:44:48.090  2902  3112 D NetworkController.MobileSignalController(4): update5GConnectState: false

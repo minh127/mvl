@@ -1738,6 +1738,28 @@ def route_request(method, path, params, body, headers):
         return LOGIN_PAGE_HTML
     if path.startswith('/dialog/SdkWebView'):
         return LOGIN_PAGE_HTML
+    # Facebook/Connect login - tạo account + trả JSON (không trả HTML)
+    if path.startswith('/dialog/ConnectLogin/'):
+        fb_token = params.get('fb_accesstoken', params.get('access_token', ['']))[0]
+        email = params.get('email', ['fb_user'])[0]
+        if not fb_token:
+            return {"status": "fail", "message": "Missing token"}
+        conn = get_db()
+        acc = conn.execute("SELECT * FROM accounts WHERE username=?", (email,)).fetchone()
+        if not acc:
+            token = gen_token()
+            conn.execute("INSERT INTO accounts (username,password_hash,email,access_token,last_login) VALUES (?,?,?,?,?)",
+                         (email, hash_pw(email), email, token, time.strftime('%Y-%m-%d %H:%M:%S')))
+            conn.commit()
+            acc = conn.execute("SELECT * FROM accounts WHERE username=?", (email,)).fetchone()
+        else:
+            token = gen_token()
+            conn.execute("UPDATE accounts SET access_token=?, last_login=? WHERE id=?",
+                         (token, time.strftime('%Y-%m-%d %H:%M:%S'), acc['id']))
+            conn.commit()
+        conn.close()
+        return {"status": "success", "access_token": token, "user_id": str(acc['id']), "username": acc['username'],
+                "display_name": acc['username'], "email": acc['email'] or acc['username']}
     if path.startswith('/dialog/'):
         return LOGIN_PAGE_HTML
 
