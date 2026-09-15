@@ -1287,7 +1287,10 @@ class MVLHandler(BaseHTTPRequestHandler):
             if acc:
                 self.send_json({"status": "success", "user_id": str(acc['id']), "username": acc['username'], "access_token": token})
             else:
-                self.send_json({"status": "success", "user_id": "1", "username": "player"})
+                self.send_json({"status": "success", "user_id": "0", "username": "guest",
+                                "display_name": "guest", "email": "",
+                                "access_token": "", "avatar": "", "vip_level": 0,
+                                "gold": 0, "knb": 0, "level": 1})
             return
 
         # === TOKEN EXCHANGE ===
@@ -1686,8 +1689,17 @@ def route_request(method, path, params, body, headers):
             acc = conn.execute("SELECT * FROM accounts WHERE access_token=?", (token,)).fetchone()
             conn.close()
             if acc:
-                return {"status": "success", "user_id": str(acc['id']), "username": acc['username'], "access_token": token}
-        return {"status": "success", "user_id": "1", "username": "player"}
+                return {"status": "success", "user_id": str(acc['id']), "username": acc['username'],
+                        "display_name": acc['username'], "email": acc['email'] or acc['username'],
+                        "access_token": token, "avatar": "", "vip_level": 0,
+                        "gold": acc['gold'] if 'gold' in acc.keys() else 0,
+                        "knb": acc['knb'] if 'knb' in acc.keys() else 0,
+                        "level": acc['level'] if 'level' in acc.keys() else 1}
+        # Token không hợp lệ - trả về guest info thay vì fail
+        return {"status": "success", "user_id": "0", "username": "guest",
+                "display_name": "guest", "email": "",
+                "access_token": "", "avatar": "", "vip_level": 0,
+                "gold": 0, "knb": 0, "level": 1}
 
     if path.startswith('/api/a/GET/me/exchangetoken'):
         token = params.get('access_token', params.get('viet_token', ['']))[0]
